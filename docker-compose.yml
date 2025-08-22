@@ -12,6 +12,7 @@ services:
     volumes:
       - /mnt/TANK/docker/syncthing/config:/config
       - /mnt/TANK/docker/syncthing/sync:/sync
+      - /mnt/TANK/home-sync/:/home-sync
     ports:
       - "8384:8384"     # Web UI
       - "22000:22000/tcp" # TCP file transfers
